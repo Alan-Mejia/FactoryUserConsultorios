@@ -2,7 +2,7 @@ package FactoryProducts;
 
 import IFactory.IUsers;
 
-public class Doctor implements IUsers {
+public class Users implements IUsers {
     private Integer id;
     private String name;
     private String lastName;
@@ -18,10 +18,9 @@ public class Doctor implements IUsers {
 
     @Override
     public void createUser() {
-        Doctor user = new Doctor();
+        Users user = new Users();
     }
 
-    @Override
     public void setValues(Integer id, String name, String lastName, String surname, String email, Integer role, String userName, String password, Integer status, String creationTime, String modificationTime, Integer userModifier) {
         this.id = id;
         this.name = name;

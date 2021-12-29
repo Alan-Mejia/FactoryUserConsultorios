@@ -1,21 +1,19 @@
 package execute;
 
-import FactoryProducts.Doctor;
-import FactoryProducts.Employee;
-import FactoryProducts.Recepcionist;
+import FactoryProducts.Users;
+import FactoryProducts.Patients;
+import FactoryProducts.Doctors;
 import IFactory.IUsers;
 
 public class FactoryConection {
 
-    IUsers user;
-
     public IUsers create(String typeUser){
         if(typeUser.equalsIgnoreCase("doctor")){
-            return new Doctor();
+            return new Users();
         }
         if(typeUser.equalsIgnoreCase("employee")){
-            return new Employee();
+            return new Patients();
         }
-        return new Recepcionist();
+        return new Doctors();
     }
 }
