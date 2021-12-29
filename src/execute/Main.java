@@ -5,6 +5,6 @@ public class Main {
         FactoryConection user = new FactoryConection();
         FactoryConection user2 = new FactoryConection();
         user.create("doctor");
-        user2.create("employee");
+        user2.create("patient");
     }
 }

@@ -11,7 +11,7 @@ public class FactoryConection {
         if(typeUser.equalsIgnoreCase("doctor")){
             return new Users();
         }
-        if(typeUser.equalsIgnoreCase("employee")){
+        if(typeUser.equalsIgnoreCase("patient")){
             return new Patients();
         }
         return new Doctors();
