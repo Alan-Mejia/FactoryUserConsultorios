@@ -16,54 +16,6 @@ public class Doctor implements IUsers {
     private String modificationTime;
     private Integer userModifier;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setRole(Integer role) {
-        this.role = role;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public void setCreationTime(String creationTime) {
-        this.creationTime = creationTime;
-    }
-
-    public void setModificationTime(String modificationTime) {
-        this.modificationTime = modificationTime;
-    }
-
-    public void setUserModifier(Integer userModifier) {
-        this.userModifier = userModifier;
-    }
-
     @Override
     public void createUser() {
         Doctor user = new Doctor();
@@ -71,15 +23,15 @@ public class Doctor implements IUsers {
 
     @Override
     public void setValues(Integer id, String name, String lastName, String surname, String email, Integer role, String userName, String password, Integer status, String creationTime, String modificationTime, Integer userModifier) {
-        setId(id);
-        setName(name);
-        setLastName(lastName);
-        setSurname(surname);
-        setEmail(email);
-        setRole(role);
-        setUserName(userName);
-        setPassword(password);
-        setCreationTime(creationTime);
-        setUserModifier(userModifier);
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.surname = surname;
+        this.email = email;
+        this.role = role;
+        this.userName = userName;
+        this.password = password;
+        this.creationTime = creationTime;
+        this.userModifier = userModifier;
     }
 }
